@@ -22,7 +22,7 @@
       hh = h / 2;
 
   const opts = {
-    strings: ["HAPPY", "BIRTHDAY!", "To You"],
+    strings: ["HAPPY", "BIRTHDAY!", "to You"],
     charSize: 30, charSpacing: 35, lineHeight: 40,
     cx: w/2, cy: h/2,
     fireworkPrevPoints: 10, fireworkBaseLineWidth: 5, fireworkAddedLineWidth: 8,
@@ -44,7 +44,7 @@
   // ==== MOBILE SPEED-UP (≈35% faster feel) ====
   const MOBILE = /Mobi|Android/i.test(navigator.userAgent);
   if (MOBILE) {
-    const SPEED_UP = 1.95;
+    const SPEED_UP = 1.93;
     const fast = v => Math.max(1, (v / SPEED_UP) | 0); // timings chhote
 
     opts.fireworkSpawnTime       = fast(opts.fireworkSpawnTime);
@@ -316,15 +316,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
